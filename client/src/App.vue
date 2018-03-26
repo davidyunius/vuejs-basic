@@ -1,7 +1,7 @@
 <template>
-  <div>
+  <div id="ninjas">
     <app-header></app-header>
-    <app-ninjas></app-ninjas>
+    <app-ninjas :ninjas="ninjas"></app-ninjas>
     <app-footer></app-footer>
   </div>
 </template>
@@ -19,7 +19,14 @@ export default {
   },
   data () {
     return {
-
+      ninjas: [
+        {name: 'Ryu', speciality: 'VueComponents', show: false},
+        {name: 'Crystal', speciality: 'HTML Wizardy', show: false},
+        {name: 'Hitoshi', speciality: 'Click Events', show: false},
+        {name: 'Tango', speciality: 'Conditionals', show: false},
+        {name: 'Kami', speciality: 'Webpack', show: false},
+        {name: 'Yoshi', speciality: 'Data Diggin', show: false}
+      ]
     }
   }
 }
